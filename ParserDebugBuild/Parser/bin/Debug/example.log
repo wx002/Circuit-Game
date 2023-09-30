@@ -1,0 +1,84 @@
+
+Circuit: 1kcl and kvl ;
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+	Node                                  Voltage
+	----                                  -------
+	----	-------
+	c                                5.000000e+00
+	b                                1.500000e+01
+	a                                3.000000e+01
+
+	Source	Current
+	------	-------
+
+	v1#branch                        -1.00000e+00
+
+ Resistor models (Simple linear resistor)
+      model                     R
+
+        rsh                     0
+     narrow                     0
+      short                     0
+        tc1                     0
+        tc2                     0
+        tce                     0
+       defw                 1e-05
+          l                 1e-05
+         kf                     0
+         af                     0
+          r                     0
+     bv_max                 1e+99
+         lf                     1
+         wf                     1
+         ef                     1
+
+ Resistor: Simple linear resistor
+     device                    r4                    r3                    r2
+      model                     R                     R                     R
+ resistance                    10                    20                    30
+         ac                    10                    20                    30
+      dtemp                     0                     0                     0
+     bv_max                 1e+99                 1e+99                 1e+99
+      noisy                     1                     1                     1
+          i                   0.5                   0.5                   0.5
+          p                   2.5                     5                   7.5
+
+ Resistor: Simple linear resistor
+     device                    r1
+      model                     R
+ resistance                    15
+         ac                    15
+      dtemp                     0
+     bv_max                 1e+99
+      noisy                     1
+          i                     1
+          p                    15
+
+ Vsource: Independent voltage source
+     device                    v1
+         dc                    30
+      acmag                     0
+      pulse         -
+        sin         -
+        exp         -
+        pwl         -
+       sffm         -
+         am         -
+    trnoise         -
+   trrandom         -
+          i                    -1
+          p                    30
+
+
+Total elapsed time: 0.031 seconds.
+
+Total DRAM available = 3976.273438 MB.
+DRAM currently available = 466.257813 MB.
+Total ngspice program size = 6.714844 MB.
+
+Note: can't find init file.
+
