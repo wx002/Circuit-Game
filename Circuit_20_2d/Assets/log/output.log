@@ -1,0 +1,71 @@
+
+Circuit: ;
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+	Node                                  Voltage
+	----                                  -------
+	----	-------
+	n08                              1.200000e+01
+
+	Source	Current
+	------	-------
+
+	v_1_9#branch                     -2.40000e+01
+
+ Resistor models (Simple linear resistor)
+      model                     R
+
+        rsh                     0
+     narrow                     0
+      short                     0
+        tc1                     0
+        tc2                     0
+        tce                     0
+       defw                 1e-05
+          l                 1e-05
+         kf                     0
+         af                     0
+          r                     0
+     bv_max                 1e+99
+         lf                     1
+         wf                     1
+         ef                     1
+
+ Resistor: Simple linear resistor
+     device                 r_5_9                 r_3_9
+      model                     R                     R
+ resistance                     1                     1
+         ac                     1                     1
+      dtemp                     0                     0
+     bv_max                 1e+99                 1e+99
+      noisy                     1                     1
+          i                    12                    12
+          p                   144                   144
+
+ Vsource: Independent voltage source
+     device                 v_1_9
+         dc                    12
+      acmag                     0
+      pulse         -
+        sin         -
+        exp         -
+        pwl         -
+       sffm         -
+         am         -
+    trnoise         -
+   trrandom         -
+          i                   -24
+          p                   288
+
+
+Total elapsed time: 0.052 seconds.
+
+Total DRAM available = 16283.542969 MB.
+DRAM currently available = 10875.453125 MB.
+Total ngspice program size = 696.000 kB.
+
+Note: can't find init file.
+
